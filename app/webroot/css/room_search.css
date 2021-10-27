@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* ルーム作成モーダルフォーム */
+/* modal */
+#mask {
+    background:rgba(0,0,0,0.4);
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:1
+}
+
+#modal {
+    /* background:#fff; */
+    background:skyblue;
+	width:35%;
+	padding:20px;
+	border-radius:4px;
+	position:absolute;
+	top:40px;
+	left:0;
+	right:0;
+	margin:0 auto;
+    text-align: center;
+	transition:transform 0.4s;
+	z-index:2;
+}
+
+#mask,.hidden,.button {
+    display: none;
+}
+
+#modal.hidden{
+	transform:translate(0,-500px);
+}
+
+.room-name {
+    width: 70%;
+    font-size: 20px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+#sub-label {
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+#sub-label:hover {
+    cursor: pointer;
+    border-bottom: solid 2px black;
+}
+
+#close {
+    margin: 15px;
+    display: inline-block;
+}
+
+#close:hover {
+    border-bottom: dotted 2px black;
+    cursor: pointer;
+}
+/* ルーム作成モーダルフォームここまで */
+
+#search-message-wrapper {
+    width: 100%;
+    margin: 5% auto;
+    text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+/* ルーム検索フォーム */
+/*フォーム全体*/
+#search-form-wrapper {
+    text-align: center;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+#search-form{
+    width:100%;/*フォームのサイズ*/
+    margin-bottom:15px;/*フォームの下に余白*/
+}
+
+/*検索ボックス*/
+#sbox{
+    outline:0;/*クリック時の青い枠線消す*/	
+    height:60px;/*検索ボックスの高さ*/	
+    padding:0 10px;/*テキスト位置調整*/	 	
+    background:#eee;/*検索ボックスの背景カラー*/
+    width: 50%;
+    font-size: 20px;
+    border: none;
+}
+
+/*検索ボタン*/
+#sbtn{
+    width:70px;/*検索ボタンの横幅*/ 
+    height:60px;/*検索ボタンの縦幅*/ 
+    border-radius:0 2px 2px 0;/*検索ボタンの角を丸める*/ 
+    background:#7fbfff;/*検索ボタンの背景カラー*/ 
+    border:none;/*検索ボタンの枠線を消す*/ 
+    color:#fff;/*検索ボタンのテキストカラー*/ 
+    font-weight:bold;/*検索ボタンのテキスト太字*/ 
+    font-size:16px;/*検索ボタンのフォントサイズ*/ 
+}
+
+/*検索ボタンマウスオーバー時*/
+#sbtn:hover{
+    color:#666;/*検索ボタンマウスオーバー時のフォントカラー*/
+    cursor: pointer;
+}
+
+
+/* ルーム検索結果 */
+
+#keyword {
+    text-align: center;
+}
+#room-wrapper {
+    text-align: center;
+    margin-top: 5%;
+    /* background-color: red; */
+}
+
+#room-table {
+    background-color: #eee;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 20px;
+}
+
+#room-table th {
+    padding: 1%;
+}
+
+#room-table td {
+    padding: 1%;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.match a {
+    color: rgb(241, 87, 87);
+    text-decoration: none;
+}
+
+.match a:hover {
+    color: black;
+}
+
+.no-match a {
+    color: black;
+    text-decoration: none;
+}
+
+.no-match a:hover {
+    color: rgb(241, 87, 87);
+}
+
+
+
+
+
+
+
+#pagi {
+    text-align: center;
+    margin-top: 1%;
+    font-size: 25px;
+    font-family: 'Yusei Magic', sans-serif;
+}

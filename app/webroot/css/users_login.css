@@ -1,0 +1,110 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+
+/* fontawesome */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* Simple Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* body */
+body {
+  background: white;
+  color: black;
+  font: 25px 'Open Sans', sans-serif;
+}
+
+/* Form Layout */
+#login-form-wrapper {
+  background: #fafafa46;
+  margin: 3% auto;
+  padding: 0 1%;
+  max-width: 70%;
+  /* display: none; */
+}
+
+h1 {
+  text-align: center;
+  padding: 5% 0;
+}
+
+form {
+  padding: 0 1%;
+}
+
+.form-item {
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.form-item input {
+  background: #fafafa;
+  border: none;
+  border-bottom: 2px solid black;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 90%;
+  height: 50px;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+.form-item input:focus {
+  border-bottom: 2px solid #c0c0c0;
+  outline: none;
+}
+
+.button-panel {
+  margin: 5% 0 0;
+  width: 100%;
+}
+
+.button-panel .button {
+  background: rgb(202, 205, 50);
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+}
+
+.button:hover {
+  background: rgb(216, 219, 22);
+  color: black;
+}
+
+.form-footer {
+  text-align: center;
+  margin: 5%;
+}
+
+.form-footer a {
+  color: #8c8c8c;
+  text-decoration: none;
+  transition: border-color 0.3s;
+  padding: 1%;
+  font-size: 25px;
+}
+
+.form-footer a:hover {
+  border-bottom: 1px dotted #8c8c8c;
+  color: black;
+  cursor: pointer;
+}
+
+#register-form-wrapper {
+    background: #fafafa46;
+    margin: 3% auto;
+    padding: 0 1%;
+    max-width: 70%;
+    /* display: none; */
+}

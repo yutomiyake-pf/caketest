@@ -1,0 +1,40 @@
+/* ヘッダー */
+header{
+    background-color: rgb(241, 87, 87);
+    height: 80px;
+    width: 100%;
+    
+}
+
+#title{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    margin-left: 1%;
+}
+header h1{
+    font-size: 50px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.link,header p{
+    float: right;
+    margin: 2%;
+    color: white;
+    font-size: 20px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.link {
+    text-decoration:none;
+}
+
+.link:hover,header p:hover{
+    color: black;
+    cursor: pointer;
+}
+
+header span{
+    color: white;
+}
+/* ここまで */

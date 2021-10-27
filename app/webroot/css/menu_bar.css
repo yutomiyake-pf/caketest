@@ -1,0 +1,40 @@
+/* メニューバー */
+#menu-bar{
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0.5%;
+}
+
+#menu-bar ul{
+    display: table;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+#menu-bar li{
+    display: table-cell;
+    width: 20%;
+    padding: 0px;
+    background-color: black;
+}
+
+#menu-bar li a{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    color: white;
+}
+
+#menu-bar li a:hover{
+    background-color:rgb(241, 87, 87);
+}
+/* ここまでメニューバー */
